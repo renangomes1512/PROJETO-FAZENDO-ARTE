@@ -5,6 +5,7 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+
 ul {
     list-style: none;
     display: flex;
@@ -16,10 +17,12 @@ ul {
     z-index: 10;
 }
 
+
 li {
    color: black;
    font-size: 18px;
 }
+
 
 a {
     text-decoration: none;
@@ -27,9 +30,11 @@ a {
     font-family: '';
 }
 
+
 a:hover {
     color: #CA1617;
 }
+
 
 .foto-logo {
     width: 50px;
@@ -37,6 +42,7 @@ a:hover {
     border-radius: 50%;
     object-fit: cover;
 }
+
 
 .tema {
     display: flex;
@@ -48,6 +54,7 @@ a:hover {
     top: -11px;
 }
 
+
 input {
     border: 1px solid rgb(0, 0, 0.126);
     border-radius: 50px;
@@ -56,6 +63,7 @@ input {
     padding: 10px 10px 10px 40px;
     z-index: 10;
 }
+
 
 input:focus {
     border-color: #CA1617;
@@ -69,6 +77,7 @@ input:focus {
     z-index: 100;
 }
 
+
 .pesquisa {
     position: relative;
     display: flex;
@@ -78,14 +87,18 @@ input:focus {
 }
 
 
+
+
 header {
     border-bottom:  1px solid black;
     height: 70px;
 }
 
+
 .ideias {
     color: #CA1617;
 }
+
 
 .intro {
     font-family: '';
@@ -93,13 +106,15 @@ header {
     font-size: 90px;
 }
 
+
 .introducao {
     display: flex;
-    margin-left: 150px;
+    margin-left: 250px;
     position: relative;
     top: 200px;
     flex-direction: column;
 }
+
 
 .exemplo {
     height: 700px;
@@ -108,9 +123,102 @@ header {
     top: -215px;
 }
 
+
 p {
     font-size: 19px;
     font-family: '';
     opacity: 0.6;
 }
 
+
+.caixa-1 {
+
+
+}
+
+
+
+@media (max-width: 844px) {
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    /* MENU */
+    ul {
+        position: static;
+        margin: 0;
+        gap: 10px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* LOGO E TEMA */
+    .tema {
+        margin-left: 0;
+        gap: 5px;
+        top: 0;
+    }
+
+    /* PESQUISA */
+    .pesquisa {
+        position: relative;
+        width: 100%;
+        max-width: 350px;
+        left: 0;
+        top: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        width: 100%;
+        max-width: 350px;
+        height: 35px;
+        padding: 10px 10px 10px 40px; /* espaço pro ícone */
+    }
+
+    .icone {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+    }
+
+    /* TÍTULO PRINCIPAL */
+    .intro {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    /* BLOCO DE INTRODUÇÃO */
+    .introducao {
+        margin-left: 0;
+        padding: 20px;
+        top: 50px;
+        text-align: center;
+    }
+
+    /* IMAGEM EXEMPLO */
+    .exemplo {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 50px;
+        margin-top: 20px;
+    }
+
+    /* TEXTOS */
+    p {
+        font-size: 17px;
+    }
+}
