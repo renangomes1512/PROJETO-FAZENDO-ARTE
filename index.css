@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    left: 65%;
+    margin-right: 250px;
+    position: relative;
+    top: 25px;
+    z-index: 10;
+}
+
+li {
+   color: black;
+   font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: '';
+}
+
+a:hover {
+    color: #CA1617;
+}
+
+.foto-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tema {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 150px;
+    position: relative;
+    z-index: 1;
+    top: -11px;
+}
+
+input {
+    border: 1px solid rgb(0, 0, 0.126);
+    border-radius: 50px;
+    width: 450px;
+    height: 30px;
+    padding: 10px 10px 10px 40px;
+    z-index: 10;
+}
+
+input:focus {
+    border-color: #CA1617;
+}
+.icone {
+    position: absolute;
+    width: 20px;
+    left: 12px;
+    position: relative;
+    left: 34px;
+    z-index: 100;
+}
+
+.pesquisa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 30%;
+    top: -50px;
+}
+
+
+header {
+    border-bottom:  1px solid black;
+    height: 70px;
+}
+
+.ideias {
+    color: #CA1617;
+}
+
+.intro {
+    font-family: '';
+    font-weight: 500;
+    font-size: 90px;
+}
+
+.introducao {
+    display: flex;
+    margin-left: 150px;
+    position: relative;
+    top: 200px;
+    flex-direction: column;
+}
+
+.exemplo {
+    height: 700px;
+    position: relative;
+    left: 55%;
+    top: -215px;
+}
+
+p {
+    font-size: 19px;
+    font-family: '';
+    opacity: 0.6;
+}
+
