@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazendo Arte</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="conteinerHeader">
+            <nav>
+                <ul> <!--menu junto com a logo-->
+                    <li class="logoTipo">
+                        <img class="logo" src="/imagens/logo.jpg" alt=""> <!--logo tipo-->
+                        <a href="/HTML/index.html">Fazendo Arte</a>
+                    </li>
+                    <li class="hideMobile"><a href="/HTML/login.html">Login</a></li>
+                    <li class="hideMobile"><a href="/HTML/produtos.html">Produtos</a></li>
+                    <li class="hideMobile"><a href="/HTML/arte.html">Artes</a></li>
+                    <li class="hideMobile"><a href="/HTML/sobre.html">Sobre</a></li>
+                    <li class="hideMobile"><a href="/HTML/contato.html">Contato</a></li>
+                    <button class="order" type="button">Pedido</button>
+                    <li class="hideDesktop" onclick=showSidebar()><a href="#">
+                        <img src="/imagens/menu.svg" alt="">
+                    </a></li>
+            
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#">
+                        <img src="/imagens/close.svg" alt="">
+                    </a></li>
+                    <li><a href="/HTML/login.html">Login</a></li>
+                    <li><a href="/HTML/produtos.html">Produtos</a></li>
+                    <li><a href="/HTML/arte.html">Artes</a></li>
+                    <li><a href="/HTML/sobre.html">Sobre</a></li>
+                    <li><a href="/HTML/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="search"> <!--caixa de pesquisa-->
+                <img class="photoSearch" src="/imagens/search.svg" alt="">
+                <input type="text" placeholder="Digite aqui o seu produto...">
+            </div>
+        </div>
+    </header>
+        <div class="introducao" class="hideMobile">
+            <h1 class="intro">Transforme suas <br><span class="introCor">ideias</span> em arte</h1>
+            <p>Artes produzidas com excelência e sensibilidade artística. Cada peça se destaca <br> pela criatividade e pelo cuidado profissional</p>
+        </div>
+        <img class="photoIntro" src="/imagens/exemplo.jpg" alt="">
+    <script src="/JS/index.js"></script>
+</body>
+</html>
