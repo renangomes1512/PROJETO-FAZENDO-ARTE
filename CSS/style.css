@@ -27,7 +27,7 @@ nav li:first-child{
     margin-right: auto;
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 40px;
 }
 
 nav a{
@@ -98,7 +98,7 @@ input{
 }
 
 .intro{
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 500;
 }
 
